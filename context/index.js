@@ -58,7 +58,7 @@ const ProductContext = ({ children }) => {
     }
     getProductsFromApi();
   }, [])
-  console.log(favoriteItems);
+
   return (
     <Context.Provider value={{ products, loading, addToFavorites, favoriteItems, handleRemoveFavorites }}>
       {children}
