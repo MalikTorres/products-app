@@ -8,8 +8,6 @@ export default function Favorites() {
 
   const { favoriteItems, handleRemoveFavorites} = useContext(Context);
 
-  console.log(favoriteItems)
-
   if (!favoriteItems.length) {
     <View style={styles.noFavorites}>
       <Text style={styles.noFavoritesText}>
